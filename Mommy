@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Mom - Eunice Gombarume</title>
+  <style>
+      * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: black;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+    .slideshow {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+    .slideshow img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: fade 21s infinite;
+    }
+    .slideshow img:nth-child(1) { animation-delay: 0s; }
+    .slideshow img:nth-child(2) { animation-delay: 7s; }
+    .slideshow img:nth-child(3) { animation-delay: 14s; }
+
+    @keyframes fade {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #ff99cc;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.6;
+      color: #f8f8f8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slideshow">
+    <img src="image1.jpg" alt="Mom Photo 1" />
+    <img src="image2.jpg" alt="Mom Photo 2" />
+    <img src="image3.jpg" alt="Mom Photo 3" />
+  </div>
+
+  <div class="content">
+    <h1>Happy Birthday, Eunice Gombarume! 🎉</h1>
+    <p>
+      Today we celebrate the heart of our home, the light in our lives, and the soul who makes everything better — you, Mom. Your strength, kindness, and love have shaped us in ways words can't express. May your day be filled with laughter, peace, and all the warmth you bring to others. We love you endlessly. 💖🎂
+    </p>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg" />
+  </audio>
+
+</body>
+</html>
